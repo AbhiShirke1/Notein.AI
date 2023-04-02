@@ -26,29 +26,33 @@ const UserSchema = mongoose.Schema({
         }
     ],
 
-    // notes: [{
-    //     folderName: {
-    //         type: String
-    //     },
+    notes: [{
+        folderName: {
+            type: String
+        },
 
-    //     files: [{
-    //         fileName: {
-    //             name: {
-    //                 type: String
-    //             },
+        files: [{
+            fileName: {
+                name: {
+                    type: String
+                },
+                      
+                content: {
+                    type: String
+                },
 
-    //             favourites: {
-    //                 type: Boolean,
-    //                 default: false
-    //             }
-    //         }
-    //     }],
+                favourites: {
+                    type: Boolean,
+                    default: false
+                }
+            }
+        }],
     
-    // }]
+    }]
 
-    notes:[],
-    content: [],
-    favourites: []
+    // notes:[],
+    // content: [],
+    // favourites: []
 
 })
 
