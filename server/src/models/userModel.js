@@ -32,23 +32,23 @@ const UserSchema = mongoose.Schema({
         },
 
         files: [{
-            fileName: {
-                name: {
-                    type: String
-                },
+            name: {
+                type: String
+            },
                       
-                content: {
-                    type: String
-                },
+            content: {
+                type: String
+            },
 
-                favourites: {
-                    type: Boolean,
-                    default: false
+            favourites: {
+                type: Boolean,
+                default: false
                 }
-            }
-        }],
-    
-    }]
+        }],
+    
+    }]
+
+    // trial: []
 
     // notes:[],
     // content: [],

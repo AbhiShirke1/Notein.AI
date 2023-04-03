@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
 const authen = require('./middleware/Authen.js')
 const SaveController = require('./controllers/SaveController.js')
 require('./db/conn.js')
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+app.use(cookieParser())
 
 //routes
 const FirstRoute = require('./routes/FirstRoute.js')
