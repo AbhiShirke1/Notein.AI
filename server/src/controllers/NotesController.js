@@ -147,5 +147,5 @@ module.exports = {
     createFile,
     editContent,
     favourites,
-    deleteFile
+    deleteFile,
 }

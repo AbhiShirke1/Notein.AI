@@ -1,4 +1,4 @@
-const userModel = require('../models/userModel.js')
+const UserModel = require('../models/userModel.js')
 const auth = require('../models/userModel.js')
 const cookieParser = require('cookie-parser')
 
@@ -11,7 +11,7 @@ const loginUser = async(req, res)=>{
 
 
     try {
-        const user = await userModel.findOne({username: username})
+        const user = await UserModel.findOne({username: username})
 
         if(user){
             if(password != user.password){
